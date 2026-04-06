@@ -1,0 +1,33 @@
+[project]
+name = "training-vs-learning"
+version = "0.1.0"
+description = "Fine-tuning and probing small language models to study training vs learning"
+requires-python = ">=3.10"
+dependencies = [
+    "transformers>=4.40.0",
+    "peft>=0.10.0",
+    "datasets>=2.19.0",
+    "torch>=2.2.0",
+    "evaluate>=0.4.0",
+    "accelerate>=0.30.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4.0",
+]
+tracking = [
+    "mlflow>=2.12.0",
+]
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]

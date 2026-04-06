@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Model weights and data (large files)
+models/*.bin
+models/*.safetensors
+models/*/
+data/*.csv
+data/*.json
+data/*.parquet
+data/*/
+!data/.gitkeep
+!models/.gitkeep
+
+# Results (keep structure, ignore outputs)
+results/*.csv
+results/*.json
+results/*.png
+results/*/
+!results/.gitkeep
+
+# MLflow
+mlruns/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
