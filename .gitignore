@@ -26,9 +26,9 @@ data/*/
 # Results (keep structure, ignore outputs)
 results/*.csv
 results/*.json
-results/*.png
 results/*/
 !results/.gitkeep
+!results/*.png
 
 # MLflow
 mlruns/
